@@ -9,15 +9,15 @@
 
 ## **⚙️ 진행 방식**
 1. **문제 선정**
-   - 각 요일의 출제 담당 맴버가 선정 문제를 `Issues`로 등록합니다. (22시 ~ 24시 사이에 올려주세요.)
-   - 등록 시, `알고리즘 분류`를 포함하여 [Wiki](https://github.com/9taetae9/algorithm-study/wiki)에도 문제를 추가해주세요.
+   - 각 요일의 출제 담당 맴버가 선정 문제를 `Issues`에 등록합니다. (당일 자정 전 올려주세요.)
+   - 등록 시, `알고리즘 분류`를 포함하여 [Wiki](https://github.com/9taetae9/algorithm-study/wiki)에도 문제를 추가합니다.
 
 2. **문제 풀이**  
-   - 오늘의 문제에 대한 풀이를 `PR(Pull Request)`로 제출해주세요.
+   - 오늘의 문제에 대한 풀이를 `PR(Pull Request)`로 제출합니다.
    - PR 제출 마감: **선정된 문제의 등록 다음날 자정까지**.
 
 3. **코드 리뷰**  
-   - 모든 맴버들은 제출된 PR에 대해 자유롭게 **코드 리뷰**를 진행해주세요.
+   - 제출된 PR에 대해 자유롭게 **코드 리뷰**를 진행해주세요.
   
 4. **정보 공유**  
    - 자유롭게 Discord, Github에 학습 관련 정보를 공유하며 같이 성장해요!
@@ -28,7 +28,7 @@
 ## **📜Issues & PR Rules**
 이슈 생성 시, 🎯 오늘의 문제 템플릿을 활용해 주세요.
 
-풀이하신 코드는 본인 브랜치에 커밋 후 pr을 생성해서 오후 11시까지 main 브랜치에 merge 해주세요.
+풀이하신 코드는 자신의 브랜치에 커밋 후 pr을 생성해서 오후 11시까지 main 브랜치 자신의 폴더에 merge 해주세요.
 ## **💻 File Naming Convention**
 ```
 📂 디렉토리 구조 및 파일명 
@@ -69,13 +69,13 @@ PR 생성 시, 아래의 규칙에 맞게 제목 및 라벨을 적절히 추가�
 
 ## **🤝 참여 규칙**
 - 적극적인 참여와 커뮤니케이션을 통해 스터디 맴버들과 함께 성장해요!
-- 문제 선정 및 풀이 책임감을 가지고 기한 내에 진행합시다!
+- 문제 선정 및 풀이 책임감을 가지고 기한 내에 진행해주세요!
 
 ---
 ## 🖌️&nbsp;&nbsp;출제 담당 요일
 |Sun|Mon|Tue|Wed|Thu|Fri|Sat|
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-|[@gildong](https://github.com/gildong)|[@gildong](https://github.com/gildong)|[@gildong](https://github.com/gildong)|[@gildong](https://github.com/gildong)|[@gildong](https://github.com/gildong)|[@gildong](https://github.com/gildong)|[@gildong](https://github.com/gildong)|
+|Study|[@gildong](https://github.com/gildong)|[@gildong](https://github.com/gildong)|[@gildong](https://github.com/gildong)|[@gildong](https://github.com/gildong)|[@gildong](https://github.com/gildong)|[@gildong](https://github.com/gildong)|
 
 ---
 
