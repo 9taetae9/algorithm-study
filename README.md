@@ -33,24 +33,29 @@
 ## **💻 File Naming Convention**
 ```
 📂 디렉토리 구조 및 파일명 
-📂 플랫폼 명 : LeetCode, Baekjoon, Programmers 
+📂 플랫폼 명 : LeetCode, Baekjoon, Programmers, SWEA
  ┗ 📂 맴버 이름(소문자 영문)
    ┗ 📜 문제제목.java
 
 사용 예
 📂 Baekjoon
  ┗ 📂 gildong
-   ┗ 📜 공통 부분 문자열.java
+   ┗ 📜 공통부분문자열.java
 ```
 ---
 ### commit 메시지 형식
-- [문제번호] 문제 제목
+- [난이도] 문제 제목
+- Baekjoon : Bronze, Silver, Gold, Platinum etc. (V, IV, III, II, I)
+- Programmers : Lv. 0 ~ 5
+- SWEA : D1~8
+- LeetCode : Easy / Medium / Hard
   ```
-  커밋 메시지 예) [5582] 공통 부분 문자열
+  커밋 메시지 예)
+  algorithm-study/Baekjoon/gildong/공통부분문자열.java  - 커밋 메시지 : [Gold V] 공통 부분 문자열
   ```
 PR 생성 시, 아래의 규칙에 맞게 제목 및 라벨을 적절히 추가해주세요.
-- 제목 : `[플랫폼/문제번호] 문제 제목 - 작성자`
-- 라벨 : `리뷰 요청 💡`, `시간 부족 ⏳` 
+- 제목 : `[플랫폼명] 문제 제목 - 작성자` ex) [Baekjoon] 공통 부분 문자열 - honggildong
+- 라벨 : `리뷰 요청 💡`, `시간 부족 ⏳`
 - 💡 **리뷰가 필요한 문제**  
   - 라벨: `리뷰 요청 💡`
   - 구체적인 고민 사항을 포함하여 맴버들에게 PR을 요청해 주세요.
@@ -63,7 +68,7 @@ PR 생성 시, 아래의 규칙에 맞게 제목 및 라벨을 적절히 추가�
 ---
 
 ## **💻 사용 플랫폼**
-- **문제 풀이**: [LeetCode](https://leetcode.com), [Baekjoon](https://www.acmicpc.net), [Programmers](https://programmers.co.kr)  
+- **문제 풀이**: [LeetCode](https://leetcode.com), [Baekjoon](https://www.acmicpc.net), [Programmers](https://programmers.co.kr), [SWEA](https://swexpertacademy.com/main/main.do)  
 - **스터디 진행**: [GitHub](https://github.com), Discord
 
 ---
