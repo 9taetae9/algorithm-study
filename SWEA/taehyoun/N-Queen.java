@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
  
-class N_Queen
+class Solution
 {
     static int total;
     static int[] queen;
