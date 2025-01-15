@@ -9,9 +9,12 @@
 
 ## **⚙️ 진행 방식**
 1. **문제 선정**
-   - 각 요일의 출제 담당 맴버가 선정 문제를 `Issues`에 등록합니다. (당일 자정 전 올려주세요.)
+   - 각 요일의 출제 담당 맴버가 선정 문제를 `Issues`에 등록합니다. (당일 자정 전 올려주세요.) 권장 난이도 :(백준 기준) 실버3 ~ 골드3
    - 등록 시, `알고리즘 분류`를 포함하여 [Wiki](https://github.com/9taetae9/algorithm-study/wiki)에도 문제를 추가합니다.
    - 스터디 모임(일) : 1주 동안 도전해볼 고난이도 1문제를 함께 선정합니다. (PR 제출 기한 : 다음 스터디 모임 전까지)
+   - 플랫폼별 난이도 참고표
+    <img width="825" alt="image" src="https://github.com/user-attachments/assets/2ea5b339-09ee-4ff7-9cda-5e730f8ba7c0" />
+
 
 2. **문제 풀이**  
    - 오늘의 문제에 대한 풀이를 `PR(Pull Request)`로 제출합니다.
