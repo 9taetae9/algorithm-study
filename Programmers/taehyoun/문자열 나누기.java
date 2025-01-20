@@ -1,3 +1,4 @@
+//첫 코드
 class Solution {
     static int ans = 0;
     static char[] chars;
@@ -24,5 +25,27 @@ class Solution {
         }
         ans++;
         return chars.length;
+    }
+}
+//개선 코드
+class Solution {
+    public int solution(String s) {
+        int ans = 1;
+        char x = s.charAt(0);
+        int cnt = 1;
+        
+        for(int i=1; i<s.length(); i++){
+            if(cnt == 0){
+                ans++;
+                x = s.charAt(i);
+            }
+            
+            if(x == s.charAt(i)){
+                cnt++;
+            }else{
+                cnt--;
+            }
+        }
+        return ans;
     }
 }
