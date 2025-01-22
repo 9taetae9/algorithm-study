@@ -59,7 +59,6 @@ class solution {
             int newR = r + direction[1];
             count += dfs(land, newC, newR);
         }
-
         return count;
     }
 }
