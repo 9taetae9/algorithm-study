@@ -40,8 +40,10 @@ class Solution {
         for(String calling : callings){
             int calledRank = rank.get(calling);
             String loser = players[calledRank-1];
+            
             rank.put(calling, calledRank-1);
             players[calledRank-1] = calling;
+            
             rank.put(loser, calledRank);
             players[calledRank] = loser;
         }
