@@ -8,7 +8,6 @@ body:
       value: |
         # 🎯 오늘의 문제
         이 템플릿에 맞춰 문제를 제출해주세요.
-
   - type: dropdown
     id: platform
     attributes:
@@ -20,7 +19,6 @@ body:
         - SWEA
     validations:
       required: true
-
   - type: input
     id: problem-title
     attributes:
@@ -28,7 +26,6 @@ body:
       placeholder: "예) 250137 - 붕대 감기"
     validations:
       required: true
-
   - type: input
     id: problem-link
     attributes:
@@ -36,7 +33,6 @@ body:
       placeholder: "https://..."
     validations:
       required: true
-
   - type: input
     id: difficulty
     attributes:
@@ -44,7 +40,6 @@ body:
       placeholder: "예) Lv. 1"
     validations:
       required: true
-
   - type: checkboxes
     id: wiki-confirmation
     attributes:
@@ -53,25 +48,20 @@ body:
       options:
         - label: Wiki의 "Weekly" 페이지에 문제 정보를 추가하겠습니다.
           required: true
-
   - type: markdown
     attributes:
       value: |
         # 📋 최종 제출 확인
-
         > 아래 정보를 확인해주세요
-
         | 항목 | 내용 |
         |:---:|:---|
-        | 📍 플랫폼 | ${{platform}} |
-        | 📝 문제 | ${{problem-title}} |
-        | 🔗 링크 | ${{problem-link}} |
-        | ⭐ 난이도 | ${{difficulty}} |
-
+        | 📍 플랫폼 | {{ platform }} |
+        | 📝 문제 | {{ problem-title }} |
+        | 🔗 링크 | {{ problem-link }} |
+        | ⭐ 난이도 | {{ difficulty }} |
         ---
         # ⏰ 제출 기한
         > 오늘 23:00까지
-
         # ⚠️ 중요 안내
         > **Wiki 업데이트를 잊지 마세요!**
         1. Wiki의 "Weekly" 페이지에 아래 형식으로 추가해주세요:
