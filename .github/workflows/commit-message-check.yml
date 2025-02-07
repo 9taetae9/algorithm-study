@@ -11,18 +11,19 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Validate Latest NON-MERGE Commit
+      - name: Validate Commit Message
         run: |
-          latest_commit=$(git log -1 --no-merges --pretty=format:"%s")
+          # UTF-8 환경 설정 추가
+          export LC_ALL=C.UTF-8
           
-          if [[ -z "$latest_commit" ]]; then
-            echo "::error::No non-merge commits found"
-            exit 1
-          fi
+          # 커밋 메시지 추출 (UTF-8 인코딩 명시)
+          latest_commit=$(git log -1 --no-merges --pretty=format:"%s" --encoding=UTF-8 | tr -d '\r')
           
-          if ! [[ $latest_commit =~ ^\[(Lv\.\s?[0-5]|(Bronze|Silver|Gold|Platinum)\s?(I|II|III|IV|V)|D\s?[1-8]|Easy|Medium|Hard)\].*$ ]]; then
+          # 개선된 정규식 (유니코드 허용)
+          regex='^\[(Lv\.\s?[0-5]|(Bronze|Silver|Gold|Platinum)\s?(I|II|III|IV|V)|D\s?[1-8]|Easy|Medium|Hard)\][[:print:][:space:]]*$'
+          
+          if ! [[ $latest_commit =~ $regex ]]; then
             echo "::error::Invalid commit: $latest_commit"
             exit 1
-          else
-            echo "✓ Valid commit: $latest_commit"
           fi
+
