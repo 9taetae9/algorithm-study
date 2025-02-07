@@ -1,0 +1,20 @@
+name: "🎯 오늘의 문제"
+description: "오늘의 알고리즘 문제 템플릿"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # 오늘의 문제
+  - type: input
+    attributes:
+      label: "문제 제목"
+      required: true
+  - type: dropdown
+    attributes:
+      label: "플랫폼"
+      options:
+        - LeetCode
+        - Baekjoon
+        - Programmers
+        - SWEA
+      required: true
