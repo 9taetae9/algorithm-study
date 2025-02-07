@@ -7,12 +7,12 @@ body:
     attributes:
       value: |
         # 🎯 오늘의 문제
-
         이 템플릿에 맞춰 문제를 제출해주세요.
+
   - type: dropdown
     id: platform
     attributes:
-      label: "## 플랫폼"
+      label: "플랫폼"
       options:
         - LeetCode
         - Baekjoon
@@ -20,31 +20,35 @@ body:
         - SWEA
     validations:
       required: true
+
   - type: input
     id: problem-title
     attributes:
-      label: "## 문제 번호 - 제목"
+      label: "문제 번호 - 제목"
       placeholder: "예) 250137 - 붕대 감기"
     validations:
       required: true
+
   - type: input
     id: problem-link
     attributes:
-      label: "## 문제 링크"
+      label: "문제 링크"
       placeholder: "https://..."
     validations:
       required: true
+
   - type: input
     id: difficulty
     attributes:
-      label: "## 난이도"
+      label: "난이도"
       placeholder: "예) Lv. 1"
     validations:
       required: true
+
   - type: checkboxes
     id: wiki-confirmation
     attributes:
-      label: "## Wiki 업데이트 확인"
+      label: "Wiki 업데이트 확인"
       description: "아래 사항을 확인해주세요"
       options:
         - label: Wiki의 "Weekly" 페이지에 문제 정보를 추가하겠습니다.
