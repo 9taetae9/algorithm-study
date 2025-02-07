@@ -6,9 +6,9 @@ body:
   - type: markdown
     attributes:
       value: |
-        # 📌 제목 작성 가이드
-        제목은 다음 형식으로 작성해주세요:
-        `[YYYY.MM.DD] 🎯 오늘의 문제`
+        # 🎯 오늘의 문제
+
+        이 템플릿에 맞춰 문제를 제출해주세요.
   - type: dropdown
     id: platform
     attributes:
@@ -44,6 +44,17 @@ body:
   - type: markdown
     attributes:
       value: |
+        ## 최종 제출 확인
+
+        ### 문제 플랫폼: ${{platform}}
+
+        ### 문제 번호 - 제목: ${{problem-title}}
+
+        ### 문제 링크: ${{problem-link}}
+
+        ### 난이도: ${{difficulty}}
+
+        ---
         # ⏰ 제출 기한
         > 오늘 23:00까지
 
@@ -51,8 +62,8 @@ body:
         > **Wiki 업데이트를 잊지 마세요!**
         
         1. Wiki의 "Weekly" 페이지에 아래 형식으로 추가해주세요:
-        ~~~
+        ```
         | 날짜       | 문제                      | 분류          |
         |:----------:|:-------------------------:|:-------------:|
         | YYYY.MM.DD | [문제명](문제링크)        | 알고리즘 유형 |
-        ~~~
+        ```
