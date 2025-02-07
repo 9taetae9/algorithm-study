@@ -6,14 +6,13 @@ body:
   - type: markdown
     attributes:
       value: |
-        # 📝 문제 등록
-        ### 제목 작성 가이드
-        > 제목은 다음 형식으로 작성해주세요: `[YYYY.MM.DD] 🎯 오늘의 문제`  
-        > 예시: `[2025.02.07] 🎯 오늘의 문제`
+        # 📌 제목 작성 가이드
+        제목은 다음 형식으로 작성해주세요:
+        `[YYYY.MM.DD] 🎯 오늘의 문제`
   - type: dropdown
     id: platform
     attributes:
-      label: "플랫폼"
+      label: "## 플랫폼"
       options:
         - LeetCode
         - Baekjoon
@@ -24,20 +23,21 @@ body:
   - type: input
     id: problem-title
     attributes:
-      label: "문제 번호 - 제목"
+      label: "## 문제 번호 - 제목"
       placeholder: "예) 250137 - 붕대 감기"
     validations:
       required: true
   - type: input
     id: problem-link
     attributes:
-      label: "문제 링크"
+      label: "## 문제 링크"
+      placeholder: "https://..."
     validations:
       required: true
   - type: input
     id: difficulty
     attributes:
-      label: "난이도"
+      label: "## 난이도"
       placeholder: "예) Lv. 1"
     validations:
       required: true
@@ -47,11 +47,10 @@ body:
         # ⏰ 제출 기한
         > 오늘 23:00까지
 
-        # ⚠️ 리마인드
-        ### 1. Wiki 업데이트
-        - 이슈 등록 후, Wiki의 "Weekly" 페이지를 업데이트해주세요.
+        # ⚠️ 중요 안내
+        > **Wiki 업데이트를 잊지 마세요!**
         
-        ### 2. Wiki 작성 형식
+        1. Wiki의 "Weekly" 페이지에 아래 형식으로 추가해주세요:
         ```
         | 날짜 | 문제 | 분류 |
         |:---:|:---:|:---:|
