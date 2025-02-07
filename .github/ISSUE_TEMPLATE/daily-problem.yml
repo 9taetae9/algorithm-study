@@ -3,21 +3,29 @@ description: "오늘의 알고리즘 문제 템플릿"
 body:
   - type: markdown
     attributes:
-      value: "# 오늘의 문제"
+      value: "# 🎯 오늘의 문제"
   - type: input
     id: problem-title
     attributes:
-      label: "문제 제목"
+      label: "문제"
+      placeholder: "예) 프로그래머스 250137 - 붕대 감기"
     validations:
       required: true
-  - type: dropdown
-    id: platform
+  - type: input
+    id: problem-link
     attributes:
-      label: "플랫폼"
-      options:
-        - LeetCode
-        - Baekjoon
-        - Programmers
-        - SWEA
+      label: "문제 링크"
     validations:
       required: true
+  - type: input
+    id: difficulty
+    attributes:
+      label: "난이도"
+      placeholder: "예) Lv. 1"
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        ## ⏰ 제출 기한
+        오늘 23:00까지
