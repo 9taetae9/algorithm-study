@@ -7,18 +7,22 @@ jobs:
   check-commit-message:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      
-      - name: Check LATEST Commit Message
+
+      - name: Validate Latest NON-MERGE Commit
         run: |
-          latest_commit=$(git log -1 --pretty=format:"%s")
+          latest_commit=$(git log -1 --no-merges --pretty=format:"%s")
+          
+          if [[ -z "$latest_commit" ]]; then
+            echo "::error::No non-merge commits found"
+            exit 1
+          fi
           
           if ! [[ $latest_commit =~ ^\[(Lv\.\s?[0-5]|(Bronze|Silver|Gold|Platinum)\s?(I|II|III|IV|V)|D\s?[1-8]|Easy|Medium|Hard)\].*$ ]]; then
-            echo "::error::Latest commit '$latest_commit' is invalid"
+            echo "::error::Invalid commit: $latest_commit"
             exit 1
           else
-            echo "✓ Valid latest commit: $latest_commit"
+            echo "✓ Valid commit: $latest_commit"
           fi
-          done <<< "$commits"
