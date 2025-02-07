@@ -9,14 +9,22 @@ body:
       description: "날짜를 수정하여 작성해주세요"
     validations:
       required: true
-  - type: markdown
-    attributes:
-      value: "# 🎯 오늘의 문제"
+  - type: dropdown
+      id: platform
+      attributes:
+        label: "플랫폼"
+        options:
+          - LeetCode
+          - Baekjoon
+          - Programmers
+          - SWEA
+      validations:
+        required: true
   - type: input
     id: problem-title
     attributes:
       label: "문제"
-      placeholder: "예) 프로그래머스 250137 - 붕대 감기"
+      placeholder: "예) 250137 - 붕대 감기"
     validations:
       required: true
   - type: input
