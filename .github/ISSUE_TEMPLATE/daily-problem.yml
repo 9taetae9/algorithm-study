@@ -10,16 +10,16 @@ body:
     validations:
       required: true
   - type: dropdown
-      id: platform
-      attributes:
-        label: "플랫폼"
-        options:
-          - LeetCode
-          - Baekjoon
-          - Programmers
-          - SWEA
-      validations:
-        required: true
+    id: platform
+    attributes:
+      label: "플랫폼"
+      options:
+        - LeetCode
+        - Baekjoon
+        - Programmers
+        - SWEA
+    validations:
+      required: true
   - type: input
     id: problem-title
     attributes:
