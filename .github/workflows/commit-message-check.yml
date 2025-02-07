@@ -15,13 +15,13 @@ jobs:
         run: |
           commits=$(git log ${{ github.event.pull_request.base.sha }}..${{ github.event.pull_request.head.sha }} --pretty=format:"%s")
           while IFS= read -r commit; do
-            if ! [[ $commit =~ ^\[(Lv\.[0-5]|Bronze\ [IV-I]|Silver\ [IV-I]|Gold\ [IV-I]|Platinum\ [IV-I]|D[1-8]|Easy|Medium|Hard)\]\ .+$ ]]; then
+            if ! [[ $commit =~ ^\[(Lv\.[0-5]|Bronze\ [V-I]|Silver\ [V-I]|Gold\ [V-I]|Platinum\ [V-I]|D[1-8]|Easy|Medium|Hard)\].*$ ]]; then
               echo "Commit message '$commit' does not match the required format"
               echo "Required format examples:"
-              echo "Programmers: [Lv.1] 문제제목"
-              echo "Baekjoon: [Bronze V] 문제제목"
-              echo "SWEA: [D4] 문제제목"
-              echo "LeetCode: [Easy] 문제제목"
+              echo "Programmers: [Lv.1] 문제 제목"
+              echo "Baekjoon: [Bronze V] 문제 제목"
+              echo "SWEA: [D4] 문제 제목"
+              echo "LeetCode: [Easy] 문제 제목"
               exit 1
             fi
           done <<< "$commits"
