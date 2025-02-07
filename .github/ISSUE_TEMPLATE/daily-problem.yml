@@ -6,20 +6,20 @@ body:
   - type: markdown
     attributes:
       value: |
-        # 📌 제목 작성 가이드
-        제목은 다음 형식으로 작성해주세요: `[YYYY.MM.DD] 🎯 오늘의 문제`
+        # 플랫폼
 
-  - type: dropdown
+  - type: input
     id: platform
     attributes:
       label: "플랫폼"
-      options:
-        - LeetCode
-        - Baekjoon
-        - Programmers
-        - SWEA
+      placeholder: "예) Programmers"
     validations:
       required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        # 문제 번호 - 제목
 
   - type: input
     id: problem-title
@@ -29,6 +29,11 @@ body:
     validations:
       required: true
 
+  - type: markdown
+    attributes:
+      value: |
+        # 문제 링크
+
   - type: input
     id: problem-link
     attributes:
@@ -36,6 +41,11 @@ body:
       placeholder: "https://..."
     validations:
       required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        # 난이도
 
   - type: input
     id: difficulty
@@ -49,13 +59,12 @@ body:
     attributes:
       value: |
         # ⏰ 제출 기한
-        오늘 23:00까지
+        > 오늘 23:00까지
 
         # ⚠️ 중요 안내
-        **Wiki 업데이트를 잊지 마세요!**
-        
-        Wiki의 "Weekly" 페이지에 아래 형식으로 추가해주세요:
-        ```markdown
+        > **Wiki 업데이트를 잊지 마세요!**
+        > Wiki의 "Weekly" 페이지에 아래 형식으로 추가해주세요:
+        ```
         | 날짜 | 문제 | 분류 |
         |:---:|:---:|:---:|
         | YYYY.MM.DD | [문제명](문제링크) | 알고리즘 유형 |
