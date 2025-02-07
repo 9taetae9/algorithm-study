@@ -6,8 +6,9 @@ body:
   - type: markdown
     attributes:
       value: |
-        # 제목 작성 가이드
+        ### 제목 작성 가이드
         제목은 다음 형식으로 작성해주세요: [YYYY.MM.DD] 🎯 오늘의 문제
+        예시: [2025.02.07] 🎯 오늘의 문제
   - type: dropdown
     id: platform
     attributes:
