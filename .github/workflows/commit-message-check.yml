@@ -18,7 +18,8 @@ jobs:
           export LC_ALL=C.UTF-8
           
           # 커밋 메시지 추출 (UTF-8 인코딩 명시)
-          latest_commit=$(git log -1 --no-merges --pretty=format:"%s" --encoding=UTF-8 | tr -d '\r')
+          latest_commit=$(git log --no-merges --pretty=format:"%s" --encoding=UTF-8 origin/main..HEAD | head -n 1 | tr -d '\r')
+
           
           # 개선된 정규식 (유니코드 허용)
           regex='^\[(Lv\.\s?[0-5]|(Bronze|Silver|Gold|Platinum)\s?(I|II|III|IV|V)|D\s?[1-8]|Easy|Medium|Hard)\][[:print:][:space:]]*$'
