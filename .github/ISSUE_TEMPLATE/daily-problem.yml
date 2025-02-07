@@ -3,6 +3,11 @@ description: "오늘의 알고리즘 문제 템플릿"
 labels: ["문제풀이"]
 title: "[YYYY.MM.DD] 🎯 오늘의 문제" 
 body:
+  - type: markdown
+      attributes:
+        value: |
+          # 제목 작성 가이드
+          제목은 다음 형식으로 작성해주세요: [YYYY.MM.DD] 🎯 오늘의 문제
   - type: dropdown
     id: platform
     attributes:
