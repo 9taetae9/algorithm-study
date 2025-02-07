@@ -1,7 +1,14 @@
 name: "🎯 오늘의 문제"
 description: "오늘의 알고리즘 문제 템플릿"
-title: "[2025.02.07] 🎯 오늘의 문제"
 body:
+  - type: input
+      id: title
+      attributes:
+        label: "제목"
+        placeholder: "[2025.02.07] 🎯 오늘의 문제"
+        description: "날짜를 수정하여 작성해주세요"
+      validations:
+        required: true
   - type: markdown
     attributes:
       value: "# 🎯 오늘의 문제"
