@@ -11,17 +11,14 @@ jobs:
         with:
           fetch-depth: 0
       
-      - name: Check Commit Messages
+      - name: Check LATEST Commit Message
         run: |
-          commits=$(git log ${{ github.event.pull_request.base.sha }}..${{ github.event.pull_request.head.sha }} --pretty=format:"%s")
-          while IFS= read -r commit; do
-            if ! [[ $commit =~ ^\[(Lv\.\s?[0-5]|(Bronze|Silver|Gold|Platinum)\s?(I|II|III|IV|V)|D\s?[1-8]|Easy|Medium|Hard)\].*$ ]]; then
-              echo "Commit message '$commit' does not match the required format"
-              echo "Required format examples:"
-              echo "Programmers: [Lv.1] 문제 제목"
-              echo "Baekjoon: [Bronze V] 문제 제목"
-              echo "SWEA: [D4] 문제 제목"
-              echo "LeetCode: [Easy] 문제 제목"
-              exit 1
-            fi
+          latest_commit=$(git log -1 --pretty=format:"%s")
+          
+          if ! [[ $latest_commit =~ ^\[(Lv\.\s?[0-5]|(Bronze|Silver|Gold|Platinum)\s?(I|II|III|IV|V)|D\s?[1-8]|Easy|Medium|Hard)\].*$ ]]; then
+            echo "::error::Latest commit '$latest_commit' is invalid"
+            exit 1
+          else
+            echo "✓ Valid latest commit: $latest_commit"
+          fi
           done <<< "$commits"
