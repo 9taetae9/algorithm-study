@@ -53,7 +53,7 @@
 - SWEA : D1~8
 - LeetCode : Easy / Medium / Hard
   ```
-  커밋 메시지 예)
+  파일 및 커밋 메시지 예)
   algorithm-study/Baekjoon/gildong/공통부분문자열.java  - 커밋 메시지 : [Gold V] 공통 부분 문자열
   ```
 PR 생성 시, 아래의 규칙에 맞게 제목 및 라벨을 적절히 추가해주세요.
