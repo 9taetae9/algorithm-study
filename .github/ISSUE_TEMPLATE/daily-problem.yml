@@ -6,66 +6,73 @@ body:
   - type: markdown
     attributes:
       value: |
-        # 플랫폼
+        # 🎯 오늘의 문제
 
-  - type: input
+        이 템플릿에 맞춰 문제를 제출해주세요.
+  - type: dropdown
     id: platform
     attributes:
-      label: "플랫폼"
-      placeholder: "예) Programmers"
+      label: "## 플랫폼"
+      options:
+        - LeetCode
+        - Baekjoon
+        - Programmers
+        - SWEA
     validations:
       required: true
-
-  - type: markdown
-    attributes:
-      value: |
-        # 문제 번호 - 제목
-
   - type: input
     id: problem-title
     attributes:
-      label: "문제 번호 - 제목"
+      label: "## 문제 번호 - 제목"
       placeholder: "예) 250137 - 붕대 감기"
     validations:
       required: true
-
-  - type: markdown
-    attributes:
-      value: |
-        # 문제 링크
-
   - type: input
     id: problem-link
     attributes:
-      label: "문제 링크"
+      label: "## 문제 링크"
       placeholder: "https://..."
     validations:
       required: true
-
-  - type: markdown
-    attributes:
-      value: |
-        # 난이도
-
   - type: input
     id: difficulty
     attributes:
-      label: "난이도"
+      label: "## 난이도"
       placeholder: "예) Lv. 1"
     validations:
       required: true
+  - type: checkboxes
+    id: wiki-confirmation
+    attributes:
+      label: "## Wiki 업데이트 확인"
+      description: "아래 사항을 확인해주세요"
+      options:
+        - label: Wiki의 "Weekly" 페이지에 문제 정보를 추가하겠습니다.
+          required: true
 
   - type: markdown
     attributes:
       value: |
+        # 📋 최종 제출 확인
+
+        > 아래 정보를 확인해주세요
+
+        | 항목 | 내용 |
+        |:---:|:---|
+        | 📍 플랫폼 | ${{platform}} |
+        | 📝 문제 | ${{problem-title}} |
+        | 🔗 링크 | ${{problem-link}} |
+        | ⭐ 난이도 | ${{difficulty}} |
+
+        ---
         # ⏰ 제출 기한
         > 오늘 23:00까지
 
         # ⚠️ 중요 안내
         > **Wiki 업데이트를 잊지 마세요!**
-        > Wiki의 "Weekly" 페이지에 아래 형식으로 추가해주세요:
+        1. Wiki의 "Weekly" 페이지에 아래 형식으로 추가해주세요:
         ```
         | 날짜 | 문제 | 분류 |
-        |:---:|:---:|:---:|
+        |:----------:|:-------------------------:|:-------------:|
         | YYYY.MM.DD | [문제명](문제링크) | 알고리즘 유형 |
         ```
