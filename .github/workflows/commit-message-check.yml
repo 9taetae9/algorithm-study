@@ -1,0 +1,27 @@
+name: Commit Message Check
+on:
+  pull_request:
+    types: [opened, edited, synchronize, reopened]
+
+jobs:
+  check-commit-message:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      
+      - name: Check Commit Messages
+        run: |
+          commits=$(git log ${{ github.event.pull_request.base.sha }}..${{ github.event.pull_request.head.sha }} --pretty=format:"%s")
+          while IFS= read -r commit; do
+            if ! [[ $commit =~ ^\[(Lv\.[0-5]|Bronze\ [IV-I]|Silver\ [IV-I]|Gold\ [IV-I]|Platinum\ [IV-I]|D[1-8]|Easy|Medium|Hard)\]\ .+$ ]]; then
+              echo "Commit message '$commit' does not match the required format"
+              echo "Required format examples:"
+              echo "Programmers: [Lv.1] 문제제목"
+              echo "Baekjoon: [Bronze V] 문제제목"
+              echo "SWEA: [D4] 문제제목"
+              echo "LeetCode: [Easy] 문제제목"
+              exit 1
+            fi
+          done <<< "$commits"
