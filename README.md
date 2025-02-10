@@ -3,7 +3,7 @@
 
 ## **📅 진행 기간**
 - **시작일**: 2025.01.19(일)
-- **진행 시간**: 매주 일요일 **2시 30분 ~ 4시 30분**
+- **진행 시간**: 매주 일요일 **2시 30분 ~ 5시**
 
 ---
 
@@ -11,10 +11,9 @@
 1. **문제 선정**
    - 각 요일의 출제 담당 맴버가 선정 문제를 `Issues`에 등록합니다. (당일 자정 전 올려주세요.) 권장 난이도 :(백준 기준) 실버3 ~ 골드3
    - 등록 시, `알고리즘 분류`를 포함하여 [Wiki](https://github.com/9taetae9/algorithm-study/wiki)에도 문제를 추가합니다.
-   - 스터디 모임(일) : 각 맴버가 1문제씩 선정하여 제한 시간을 두고 실시간으로 각자 푼 뒤 토의를 진행합니다. 해당 문제들은 다음 스터디 모임 전까지 pr을 통해 제출합니다.
+   - 스터디 모임(일) : 각 맴버가 1문제씩 선정하여 제한 시간을 두고 실시간으로 제한 시간 내에 각자 푼 뒤 토의를 진행합니다. 해당 문제들은 다음 스터디 모임 전까지 pr을 통해 제출합니다.
    - 플랫폼별 난이도 참고표
     <img width="825" alt="image" src="https://github.com/user-attachments/assets/2ea5b339-09ee-4ff7-9cda-5e730f8ba7c0" />
-
 
 2. **문제 풀이**  
    - 오늘의 문제에 대한 풀이를 `PR(Pull Request)`로 제출합니다.
@@ -26,8 +25,6 @@
 4. **정보 공유**  
    - 자유롭게 Discord, Github에 학습 관련 정보를 공유하며 같이 성장해요!
 ---
-
-
 
 ## **📜Issues & PR Rules**
 이슈 생성 시, 🎯 오늘의 문제 템플릿을 활용해 주세요.
@@ -67,7 +64,6 @@ PR 생성 시, 아래의 규칙에 맞게 제목 및 라벨을 적절히 추가�
   - 라벨: `시간 부족 ⏳`  
   - 해당 문제에 대한 풀이 흔적을 포함해 주세요.
   
-
 ---
 
 ## **💻 사용 플랫폼**
@@ -84,7 +80,7 @@ PR 생성 시, 아래의 규칙에 맞게 제목 및 라벨을 적절히 추가�
 ## 🖌️&nbsp;&nbsp;출제 담당 요일
 |Sun|Mon|Tue|Wed|Thu|Fri|Sat|
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-|Study|[조세은](https://github.com/ariel-ssen)|[양병운](https://github.com/Yang-ByeongUn)|[허지웅](https://github.com/kiki1875b)|[백승헌](https://github.com/FrogBaek)|[김태현](https://github.com/9taetae9)|[김태현](https://github.com/9taetae9)|
+|[김태현](https://github.com/9taetae9)|[허지웅](https://github.com/kiki1875b)|[양병운](https://github.com/Yang-ByeongUn)|[허지웅](https://github.com/kiki1875b)|[백승헌](https://github.com/FrogBaek)|[백승헌](https://github.com/FrogBaek)|[양병운](https://github.com/Yang-ByeongUn)|
 
 ---
 
