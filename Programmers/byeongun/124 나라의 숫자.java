@@ -7,7 +7,7 @@ import java.util.List;
 class TodayAlgorithm {
 
   public static void main(String[] args) throws IOException {
-    //124나라
+    //124 나라의 숫자
     solution(7);
   }
 
