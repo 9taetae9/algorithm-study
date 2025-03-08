@@ -11,6 +11,7 @@ class TodayAlgorithm {
 
   public static void main(String[] args) throws IOException {
     //134240 - 푸드 파이트 대회
+    
     String solution = solution(new int[]{1, 3, 4, 7});
     System.out.println("solution = " + solution);
   }
